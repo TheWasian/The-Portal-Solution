@@ -7,7 +7,7 @@ public class buttontrigger : MonoBehaviour
     public static bool exitTrigger = false;
 
     private void OnTriggerEnter(Collider other)
-        {
+    {
             if (other.CompareTag("HeavyCube"))
             {
 
@@ -15,14 +15,18 @@ public class buttontrigger : MonoBehaviour
 
             }
 
-            if (!(other.CompareTag("HeavyCube")))
-            {
-
-                exitTrigger = false;
-
-            }
     }
-    
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("HeavyCube"))
+        {
+
+            exitTrigger = false;
+
+        }
+    }
+
 
 
 }
