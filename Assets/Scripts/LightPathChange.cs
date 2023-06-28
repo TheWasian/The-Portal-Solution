@@ -10,6 +10,7 @@ public class LightPathChange : MonoBehaviour
 
     private void Start()
     {
+        //sets default colour to matBlue
         GetComponent<Renderer>().material = matBlue;
     }
 
@@ -17,6 +18,7 @@ public class LightPathChange : MonoBehaviour
     {
         if (buttontrigger.exitTrigger == true)
         {
+            //if the exitTrigger is true then the material will change to orange
             GetComponent<Renderer>().material = matOrange;
         }
     }

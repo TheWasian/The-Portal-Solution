@@ -4452,6 +4452,7 @@ GameObject:
   - component: {fileID: 409644877}
   - component: {fileID: 409644876}
   - component: {fileID: 409644875}
+  - component: {fileID: 409644878}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Player
@@ -4538,6 +4539,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409644873}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &409644878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409644873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ef9158d2c0b6e45bc9bbd2a56b4d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &414717634
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,9 @@ public class CameraMove : MonoBehaviour
 
     private void Awake()
     {
+        //Forces it to have a RigidBody
         rigidbody = GetComponent<Rigidbody>();
+        //Locks cursor
         Cursor.lockState = CursorLockMode.Locked;
 
         TargetRotation = transform.rotation;
@@ -53,6 +55,7 @@ public class CameraMove : MonoBehaviour
         rigidbody.velocity = newVelocity;
     }
 
+    //If player goes through a portal this will be called to fix the player cam postion
     public void ResetTargetRotation()
     {
         TargetRotation = Quaternion.LookRotation(transform.forward, Vector3.up);

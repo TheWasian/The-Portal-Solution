@@ -16,6 +16,7 @@ public class dispenserLogic : MonoBehaviour
     {
         if (dTrigger == true)
         {
+            //removes mesh collider for dispenser then re enables it
             this.GetComponent<MeshCollider>().enabled = false;
             yield return new WaitForSeconds(1);
             this.GetComponent<MeshCollider>().enabled = true;

@@ -11,6 +11,7 @@ public class ButtonAnimation : MonoBehaviour
     {
         if (buttontrigger.exitTrigger == true)
         {
+            //sends a public bool
             anim.SetBool("pressed", true);
         }
     }

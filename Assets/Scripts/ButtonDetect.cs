@@ -8,8 +8,10 @@ public class ButtonDetect : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //checks if the object touches "Heavy Button"
         if (other.CompareTag("HeavyButton"))
         {
+            //Runs animation for door
             Debug.Log("Touched");
             anim.SetBool("near", true);
         }

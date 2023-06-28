@@ -16,11 +16,13 @@ public class Crosshair : MonoBehaviour
 
     private void Start()
     {
+        // Checks if the portals exists
         var portals = portalPair.Portals;
 
+        //Changes the colour of the crosshair to match the colour of the portals
         inPortalImg.color = portals[0].PortalColour;
         outPortalImg.color = portals[1].PortalColour;
-
+        //Ensures that the crosshair will be disabled 
         inPortalImg.gameObject.SetActive(false);
         outPortalImg.gameObject.SetActive(false);
     }
