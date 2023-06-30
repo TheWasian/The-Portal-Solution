@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chamber 1.unity
     guid: c1ac1d3aefb36584b8632c6b72c9e879
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MAIN.unity
     guid: 7c21b9d3df45a5e4bbb234f4345a4cb2
   m_configObjects: {}
