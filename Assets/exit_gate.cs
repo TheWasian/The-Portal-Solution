@@ -11,6 +11,7 @@ public class exit_gate : MonoBehaviour
     {
         if(buttontrigger.exitTrigger == true)
         {
+            
             anim.SetBool("near", true);
         }
     }
